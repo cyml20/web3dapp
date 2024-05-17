@@ -1,0 +1,22 @@
+{
+    "models": [
+        {
+            "name": "Coke",
+            "modelPath": "assets/webgi/coke.glb",
+            "imagePath": "assets/images/cokeimg.jpeg",
+            "description": "Coca-Cola, or Coke, is a carbonated soft drink with a cola flavor manufactured by the Coca-Cola Company. In 2013, Coke products were sold in over 200 countries worldwide, with consumers drinking more than 1.8 billion company beverage servings each day. Coca-Cola ranked No. 87 in the 2018 Fortune 500 list of the largest United States corporations by total revenue. Based on Interbrand's 'best global brand' study of 2020, Coca-Cola was the world's sixth most valuable brand."
+        },
+        {
+            "name": "Sprite",
+            "modelPath": "assets/webgi/sprite.glb",
+            "imagePath": "assets/images/spriteimg.jpeg",
+            "description": "Sprite is a colorless, lemon and lime-flavored soft drink created by The Coca-Cola Company. It was first developed in West Germany in 1959 as Fanta Klare Zitrone and was introduced in the United States under the Sprite brand name in 1961."
+        },
+        {
+            "name": "Dr Pepper",
+            "modelPath": "assets/webgi/drpepper.glb",
+            "imagePath": "assets/images/drpepperimg.jpeg",
+            "description": "Dr Pepper is a carbonated soft drink. It was created in the 1880s by Charles Alderton in Waco, Texas, and first served around 1885. Dr Pepper was first nationally marketed in the United States in 1904 and is now also sold in Europe, Asia, North and South America."
+        }
+    ]
+}

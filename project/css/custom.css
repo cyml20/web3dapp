@@ -1,0 +1,198 @@
+/* Installing fonts */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/LOKICOLA.TTF);
+}
+
+@font-face {
+    font-family: main;
+    src: url(../assets/fonts/eau_sans.ttf);
+}
+
+@font-face {
+    font-family: mainBold;
+    src: url(../assets/fonts/eau_sans_bold.ttf);
+}
+
+/* Styling the navbar */
+.logo {
+    margin-top: 3px;
+}
+
+.logo h1,
+.logo h2 {
+    font-family: cocaColaFont;
+    color: white !important;
+    font-size: 31px;
+    margin: 0;
+    float: left;
+    padding-right: 2px;
+}
+
+.logo-container {
+    background-color: #98041c;
+    border-radius: 60px;
+    padding: 10px;
+}
+
+/* Navbar styling */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #6F0B0B !important;
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-link {
+    color: #333 !important;
+}
+
+.navbar-brand h1 {
+    color: #98041c;
+}
+
+.navbar-brand h2 {
+    color: #98041c;
+}
+
+/* Main content styling */
+.main_contents {
+    text-align: center;
+    margin-bottom: 10px;
+    background-image: url(../assets/images/main_3D.png);
+    background-size: cover;
+    padding: 50px;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+#main_3d_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_text {
+    font-family: main;
+    color: #333;
+}
+
+#main_text h2,
+#main_text h3 {
+    color: white;
+    font-family: mainBold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Cards styling */
+.card {
+    font-family: main;
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    font-family: mainBold;
+}
+
+.card img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.card .card-body {
+    padding: 15px;
+    text-align: left;
+}
+
+.card .btn {
+    background-color: #b32e2e;
+    color: white;
+}
+
+.card .btn:hover {
+    background-color: #98041c;
+    color: white;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #98041c;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ddd;
+}
+
+/* Can Content styling */
+.can-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.can-content h2 {
+    font-family: mainBold;
+}
+
+.can-content p {
+    font-family: main;
+}
+
+.can-column {
+    padding-right: 20px;
+}
+
+#container3D canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#drinkImage {
+    max-width: 250px;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
+/* Button styling */
+#button {
+    transition-duration: 0.4s;
+    background-color: #ac0c1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#button:hover {
+    background-color: #F1F1F1;
+    color: #ac0c1c
+}
+
+/* Arrows styling */
+#arrowContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.arrow {
+    width: 50px;
+    cursor: pointer;
+    margin: 0 20px;
+}

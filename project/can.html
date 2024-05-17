@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>3D Model Viewer</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Logo and NavBar-->
+        <nav class="container-fluid bg-light p-3 sticky-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <a class="navbar-brand" href="index.html">
+                                <h1>1</h1>
+                                <h1>oca</h1>
+                                <h2>Cola</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Collapsible NavBar Menu Icon-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="can.html">Models</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div class="container can-content">
+            <div class="row">
+
+                <!-- Left Column with Words -->
+                <div class="col-md-6 can-column" id="modelInfo">
+                    <!-- Model info (copied from Wikipedia) will be here -->
+                </div>
+
+                <!-- Right column with Three.js Scene -->
+                <div class="col-md-6">
+                    <div id="container3D"></div>
+                    <img id="drinkImage" src="" style="display: none;">
+
+                    <div id="arrowContainer">
+                        <img id="prevArrow" src="assets/images/larrow.png" onclick="show3D()" class="arrow">
+                        <img id="nextArrow" src="assets/images/rarrow.png" onclick="showImage()" class="arrow">
+                    </div>
+                </div>
+
+                <!-- Camera angle buttons -->
+                <div class="col-md-6">
+                    <div>
+                        <p>Models:</p>
+                        <button id="button" onclick="loadModel('Coke')">Coke Cola</button>
+                        <button id="button" onclick="loadModel('Sprite')">Sprite</button>
+                        <button id="button" onclick="loadModel('Dr Pepper')">Dr Pepper</button>
+                        <br><br>
+                        <p>Camera Angles:</p>
+                        <button id="button" onclick="changeView('top')">Top View</button>
+                        <button id="button" onclick="changeView('bottom')">Bottom View</button>
+                        <button id="button" onclick="changeView('left')">Left View</button>
+                        <button id="button" onclick="changeView('right')">Right View</button>
+                        <br><br>
+                        <p>Lighting Direction:</p>
+                        <button id="button" onclick="changeLighting('normal')">Normal</button>
+                        <button id="button" onclick="changeLighting('top')">Top</button>
+                        <button id="button" onclick="changeLighting('bottom')">Bottom</button>
+                        <br><br>
+                        <p>Click once to change to wireframe and click again to revert to normal:</p>
+                        <button id="button" onclick="toggleWireframe()">Toggle Wireframe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 Coca Cola</p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="#"><i class="fab fa-facebook-square fa-2x"
+                                style="font-size:20px;color:rgb(8, 100, 252);"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"
+                                style="font-size:20px;color:rgb(32, 156, 244);"></i></a>
+                        <a href="#"><i class="fab fa-google-plus fa-2x"
+                                style="font-size:20px;color:rgb(255, 255, 255);"></i></a>
+                        <a href="#"><i class="fab fa-github-square fa-2x"
+                                style="font-size:20px;color:rgb(0, 0, 0);"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDzwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="js/main.js"></script>
+
+    <script>
+        window.onload = function () {
+            loadModel('Coke');
+        };
+    </script>
+
+</body>
+
+</html>
